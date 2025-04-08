@@ -1,0 +1,27 @@
+{
+  "name": "gourmet-haven",
+  "version": "1.0.0",
+  "description": "A modern restaurant website",
+  "main": "index.html",
+  "homepage": "https://mouhameddev.github.io/restaurant-project",
+  "scripts": {
+    "start": "live-server",
+    "dev": "live-server",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d .",
+    "build": "echo \"No build step required for static site\""
+  },
+  "keywords": [
+    "restaurant",
+    "website",
+    "responsive",
+    "modern"
+  ],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "gh-pages": "^6.3.0",
+    "live-server": "^1.2.2"
+  }
+}

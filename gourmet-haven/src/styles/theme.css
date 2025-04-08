@@ -1,0 +1,116 @@
+:root {
+  --transition-speed: 0.3s;
+  --border-radius: 0.5rem;
+  --spacing-unit: 1rem;
+  --shadow-color: rgba(0, 0, 0, 0.1);
+}
+
+/* Light Mode Theme */
+body.light-mode {
+  --primary-color: #111111;
+  --secondary-color: #d4af37;
+  --accent-color: #8b0000;
+  --text-color: #111111;
+  --light-bg: #fff5ee;
+  --white: #ffffff;
+  --nav-bg: rgba(255, 245, 238, 0.95);
+  --card-bg: #ffffff;
+  --link-color: #0066cc;
+  --placeholder-color: #666666;
+  background-color: var(--white);
+  color: var(--text-color);
+}
+
+/* Dark Mode Theme */
+body.dark-mode {
+  --primary-color: #f0f0f0;
+  --secondary-color: #d4af37;
+  --accent-color: #ff6b6b;
+  --text-color: #f0f0f0;
+  --light-bg: #121212;
+  --white: #1e1e1e;
+  --nav-bg: rgba(18, 18, 18, 0.95);
+  --card-bg: #2c2c2c;
+  --link-color: #91cfff;
+  --placeholder-color: #aaaaaa;
+  background-color: var(--light-bg);
+  color: var(--text-color);
+}
+
+/* Dim Mode Theme */
+body.dim-mode {
+  --primary-color: #e0e0e0;
+  --secondary-color: #d4af37;
+  --accent-color: #ff6b6b;
+  --text-color: #e0e0e0;
+  --light-bg: #1a1a1a;
+  --white: #2a2a2a;
+  --nav-bg: rgba(26, 26, 26, 0.95);
+  --card-bg: #2a2a2a;
+  --link-color: #91cfff;
+  --placeholder-color: #aaaaaa;
+  background-color: var(--light-bg);
+  color: var(--text-color);
+  filter: brightness(0.8);
+}
+
+/* Base Transitions */
+@media (prefers-reduced-motion: no-preference) {
+  body,
+  a,
+  button,
+  input,
+  select,
+  textarea {
+    transition: background-color var(--transition-speed) ease,
+                color var(--transition-speed) ease,
+                transform var(--transition-speed) ease,
+                border-color var(--transition-speed) ease,
+                box-shadow var(--transition-speed) ease;
+  }
+}
+
+/* Typography */
+body {
+  font-family: 'Inter', sans-serif;
+  line-height: 1.6;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  color: var(--primary-color);
+  line-height: 1.2;
+}
+
+a {
+  color: var(--link-color);
+  text-decoration: none;
+}
+
+a:hover,
+a:focus {
+  color: var(--secondary-color);
+}
+
+/* Form Elements */
+input, select, textarea {
+  background-color: var(--card-bg);
+  border: 1px solid var(--placeholder-color);
+  color: var(--text-color);
+  border-radius: var(--border-radius);
+  padding: 0.5rem;
+}
+
+input:focus, 
+select:focus, 
+textarea:focus {
+  outline: none;
+  border-color: var(--secondary-color);
+  box-shadow: 0 0 0 2px rgba(212, 175, 55, 0.2);
+}
+
+input::placeholder,
+textarea::placeholder {
+  color: var(--placeholder-color);
+} 

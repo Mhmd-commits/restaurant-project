@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Gourmet Haven - Experience fine dining at its best">
+    <meta name="theme-color" content="#ff6b6b">
+    <title>Gourmet Haven | Fine Dining Experience</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="icon" href="favicon.ico">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="nav-container">
+            <a href="/" class="logo">Gourmet Haven</a>
+            <div class="nav-links">
+                <a href="#home">Home</a>
+                <a href="#menu">Menu</a>
+                <a href="#reservation">Reservation</a>
+                <a href="#about">About</a>
+                <a href="#contact">Contact</a>
+            </div>
+            <div class="theme-toggle">
+                <i class="fas fa-sun"></i>
+                <i class="fas fa-moon"></i>
+                <div class="toggle-ball"></div>
+            </div>
+            <div class="burger">
+                <div class="line"></div>
+                <div class="line"></div>
+                <div class="line"></div>
+            </div>
+        </div>
+    </nav>
+
+    <main>
+        <section id="home" class="hero">
+            <div class="hero-content">
+                <h1>Welcome to Gourmet Haven</h1>
+                <p>Experience the finest dining in town</p>
+                <div class="hero-buttons">
+                    <a href="#menu" class="btn primary">View Menu</a>
+                    <a href="#reservation" class="btn secondary">Make Reservation</a>
+                </div>
+            </div>
+        </section>
+
+        <section id="menu" class="menu-section">
+            <div class="container">
+                <h2>Our Menu</h2>
+                <div class="menu-categories">
+                    <button class="category-btn active" data-category="all">All</button>
+                    <button class="category-btn" data-category="starters">Starters</button>
+                    <button class="category-btn" data-category="main">Main Course</button>
+                    <button class="category-btn" data-category="desserts">Desserts</button>
+                </div>
+                <div class="menu-items" id="menu-items">
+                    <!-- Starters -->
+                    <div class="menu-item" data-category="starters">
+                        <img src="https://images.unsplash.com/photo-1623259838743-9f1e884fba59?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60" alt="Caprese Salad">
+                        <div class="menu-item-content">
+                            <h3>Caprese Salad</h3>
+                            <p>Fresh mozzarella, tomatoes, and basil drizzled with balsamic glaze</p>
+                            <span class="price">$12</span>
+                        </div>
+                    </div>
+                    <div class="menu-item" data-category="starters">
+                        <img src="https://images.unsplash.com/photo-1551024709-8f23befc6f87?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60" alt="Bruschetta">
+                        <div class="menu-item-content">
+                            <h3>Bruschetta</h3>
+                            <p>Grilled bread topped with tomatoes, garlic, olive oil, and fresh basil</p>
+                            <span class="price">$10</span>
+                        </div>
+                    </div>
+                    <div class="menu-item" data-category="starters">
+                        <img src="https://images.unsplash.com/photo-1575932444877-5106bee2a599?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60" alt="Calamari">
+                        <div class="menu-item-content">
+                            <h3>Crispy Calamari</h3>
+                            <p>Lightly fried squid served with lemon aioli</p>
+                            <span class="price">$14</span>
+                        </div>
+                    </div>
+                    
+                    <!-- Main Course -->
+                    <div class="menu-item" data-category="main">
+                        <img src="https://images.unsplash.com/photo-1546833999-b9f581a1996d?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60" alt="Filet Mignon">
+                        <div class="menu-item-content">
+                            <h3>Filet Mignon</h3>
+                            <p>Premium cut beef served with garlic mashed potatoes and seasonal vegetables</p>
+                            <span class="price">$38</span>
+                        </div>
+                    </div>
+                    <div class="menu-item" data-category="main">
+                        <img src="https://images.unsplash.com/photo-1580651315530-69c8e0026377?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60" alt="Lobster Risotto">
+                        <div class="menu-item-content">
+                            <h3>Lobster Risotto</h3>
+                            <p>Creamy arborio rice cooked with lobster, white wine, and parmesan</p>
+                            <span class="price">$32</span>
+                        </div>
+                    </div>
+                    <div class="menu-item" data-category="main">
+                        <img src="https://images.unsplash.com/photo-1519708227418-c8fd9a32b7a2?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60" alt="Salmon">
+                        <div class="menu-item-content">
+                            <h3>Herb-Crusted Salmon</h3>
+                            <p>Fresh salmon with an herb crust, served with quinoa and roasted asparagus</p>
+                            <span class="price">$28</span>
+                        </div>
+                    </div>
+                    
+                    <!-- Desserts -->
+                    <div class="menu-item" data-category="desserts">
+                        <img src="https://images.unsplash.com/photo-1488900128323-21503983a07e?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60" alt="Tiramisu">
+                        <div class="menu-item-content">
+                            <h3>Classic Tiramisu</h3>
+                            <p>Coffee-soaked ladyfingers layered with mascarpone cream</p>
+                            <span class="price">$10</span>
+                        </div>
+                    </div>
+                    <div class="menu-item" data-category="desserts">
+                        <img src="https://images.unsplash.com/photo-1551024506-0bccd828d307?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60" alt="Chocolate Lava Cake">
+                        <div class="menu-item-content">
+                            <h3>Chocolate Lava Cake</h3>
+                            <p>Warm chocolate cake with a molten center, served with vanilla ice cream</p>
+                            <span class="price">$12</span>
+                        </div>
+                    </div>
+                    <div class="menu-item" data-category="desserts">
+                        <img src="https://images.unsplash.com/photo-1565958011703-44f9829ba187?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60" alt="Crème Brûlée">
+                        <div class="menu-item-content">
+                            <h3>Crème Brûlée</h3>
+                            <p>Rich custard topped with a layer of caramelized sugar</p>
+                            <span class="price">$9</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="reservation" class="reservation-section">
+            <div class="container">
+                <h2>Make a Reservation</h2>
+                <form class="reservation-form">
+                    <div class="form-group">
+                        <input type="text" placeholder="Your Name" required>
+                    </div>
+                    <div class="form-group">
+                        <input type="email" placeholder="Your Email" required>
+                    </div>
+                    <div class="form-group">
+                        <input type="tel" placeholder="Your Phone" required>
+                    </div>
+                    <div class="form-group">
+                        <input type="date" required>
+                    </div>
+                    <div class="form-group">
+                        <input type="time" required>
+                    </div>
+                    <div class="form-group">
+                        <input type="number" placeholder="Number of Guests" min="1" max="10" required>
+                    </div>
+                    <button type="submit" class="btn primary">Book Now</button>
+                </form>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>Gourmet Haven</h3>
+                    <p>123 Fine Dining Street</p>
+                    <p>City, State 12345</p>
+                </div>
+                <div class="footer-section">
+                    <h3>Opening Hours</h3>
+                    <p>Monday - Friday: 11:00 AM - 10:00 PM</p>
+                    <p>Saturday - Sunday: 10:00 AM - 11:00 PM</p>
+                </div>
+                <div class="footer-section">
+                    <h3>Contact Us</h3>
+                    <p>Phone: (123) 456-7890</p>
+                    <p>Email: info@gourmethaven.com</p>
+                </div>
+            </div>
+            <div class="social-links">
+                <a href="#"><i class="fab fa-facebook"></i></a>
+                <a href="#"><i class="fab fa-instagram"></i></a>
+                <a href="#"><i class="fab fa-twitter"></i></a>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html> 
