@@ -3,7 +3,7 @@
   "version": "1.0.0",
   "description": "A modern restaurant website",
   "main": "index.html",
-  "homepage": "https://mouhameddev.github.io/restaurant-project",
+  "homepage": "https://mhmd-commits.github.io/restaurant-project",
   "scripts": {
     "start": "live-server",
     "dev": "live-server",
